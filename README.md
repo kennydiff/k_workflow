@@ -36,11 +36,8 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 
 - #### 功能
 
-- [x] 去掉这个组件的依赖：'pyperclip'
 - [x] type `sd → // K_22710 Slash
 - [x] type `hd → # K_22710 Hashtag
 - [x] type `ud → _22710 Underline
 - [x] 缺陷Fix： ken_5位年月日里面剪贴板的内容被覆盖了， 应该先临时存，然后再paste
-
-
-
+- [x] 去掉这个组件的依赖：'pyperclip'
