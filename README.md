@@ -12,7 +12,6 @@ An Alfred 4 workflow for opening files or folders with Visual Studio Code. Based
 - #### 功能
 
 - [x] 打开VSCode的同时，同时将所选的子文件夹/当前文件夹位置的iTerm同时打开
-
 - [x] 在Alfred里绑定热键 "HyperKey +  E"，在Manico里绑定VSCode的热键是 "⌥ + E"
 
 ## ⚙️finder_iterm (AppleScript)
