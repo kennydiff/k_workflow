@@ -47,3 +47,19 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 - [x] type `ud → _22710 Underline
 - [x] Defect Fix: The content in the clipboard was overwritten in ken_5-digit date, it should be temporarily stored first, then paste.
 
+## ⚙️new_file (shell)
+
+The workflow allows you to quickly create new files in the Finder. If the post-haste behavior is enabled, new files are created the same way as folders are when you use the shortcut (default: ^⌥⇧⌘ + N). Otherwise you will be prompted with the input mask where you can configure the file name and type.
+The workflow will pick up on your location in the Finder and create the new file there. If you use the keyword, the most recently used Finder window will be selected as the destination. If no Finder window is currently open, the file will be created in the configurable fallback location.
+
+Branched from this project [New File](https://github.com/zeitlings/alfred-workflows?tab=readme-ov-file#18-new-file), some minor issues were fixed.
+
+- [x] When there is no Finder window, it can cause errors in the generated files.
+- [x] Some unnecessary processing was done when pasting text, such as automatically escaping characters like `\n`.
+
+Creating a new file.
+- [x] ⌘ to view the full path to the target folder.
+- [x] ↩ to create the file with configured settings.
+- [x] ⌘⇧↩ to create the file with clipboard contents.
+- [x] ⌥⇧↩ to create the file without clipboard contents.
+- [x] If auto-suggest is enabled, press TAB to accept and expand the suggested filename.
