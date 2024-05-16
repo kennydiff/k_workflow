@@ -5,7 +5,7 @@ English | [中文](./README_ZH.md)
 
 # kenny_alfred_workflow
 
-🌈These three are the alfred_workflows that I frequently use and have modified. They can help me, and perhaps they can help others as well, Hope you will like it ~~~ 🍺🌸🦀
+🌈These are the alfred_workflows that I frequently use and have modified. They can help me, and perhaps they can help others as well, Hope you will like it ~~~ 🍺🌸🦀
 
 
 
