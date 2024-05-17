@@ -10,8 +10,7 @@
 
 ## ⚙️code_iterm (AppleScript)
 
-打开VSCode的同时，添加了 额外的功能，可同时将所选的子文件夹/当前文件夹位置的iTerm同时打开方便调试,省去了在vscode里再shift+cmd+c打开外部终端的步骤。  AppleScript可用"脚本编辑器"编辑调试,比在Alfred调试友好。
-An Alfred 4 workflow for opening files or folders with Visual Studio Code. Based off of the Alfred 2 workflow from @franzheidl.
+在打开VSCode时，已添加了额外的功能，允许iTerm同时打开所选子文件夹或当前文件夹位置，以便方便地进行调试，消除了使用shift+cmd+c在VSCode内打开外部终端的需求。AppleScript可以使用“脚本编辑器”进行编辑和调试，这比在Alfred中调试更用户友好。一个基于@franzheidl的Alfred 2工作流，用于使用Visual Studio Code打开文件或文件夹的Alfred 4工作流。
 
 - #### 功能
 - [x] 打开VSCode的同时，同时将所选的子文件夹/当前文件夹位置的iTerm同时打开
