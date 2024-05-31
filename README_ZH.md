@@ -57,3 +57,7 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 - [x] ⌘⇧↩ 使用剪贴板内容创建文件。
 - [x] ⌥⇧↩ 不使用剪贴板内容创建文件。
 - [x] 如果自动建议已启用，按 TAB 键接受并展开建议的文件名。
+
+## ⚙️search_notes (AppleScript)
+
+另一种简单的Apple Notes Searcher，比之前的Alfred的 `Search Notes` 好的地方在于可以输入多个参数，空格间隔开来。 这个版本直接调用Notes运行里面的系统自带的多关键词搜索框来搜索，可以更灵活，更准确的找到自己的笔记。
