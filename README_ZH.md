@@ -61,3 +61,9 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 ## ⚙️search_notes (AppleScript)
 
 另一个简单的Apple Notes Searcher，比之前的Alfred的 [Search Notes](https://github.com/sballin/alfred-search-notes-app) 好一些的地方在于可以输入多个参数，空格间隔开来。 这个版本直接调用Notes运行里面的系统自带的多关键词搜索框来搜索，可以更灵活，更准确的找到自己的笔记。
+
+### 使用方法：
+```
+# K_24601 `sn` 是本workflow的默认关键词(Search Notes的缩写)，后面连接多个要搜索的关键词 `空格`分隔, 比如...
+sn ceph config set osd
+```
