@@ -63,3 +63,7 @@ Creating a new file.
 - [x] ⌘⇧↩ to create the file with clipboard contents.
 - [x] ⌥⇧↩ to create the file without clipboard contents.
 - [x] If auto-suggest is enabled, press TAB to accept and expand the suggested filename.
+
+## ⚙️search_notes (AppleScript)
+
+Another straightforward Apple Notes Searcher, which is superior to the previous Alfred's [Search Notes](https://github.com/sballin/alfred-search-notes-app), lies in its ability to input multiple parameters, separated by spaces. This version directly invokes Notes to run the built-in multi-keyword search box for searching, which allows for more flexibility and precision in finding one's own notes.
