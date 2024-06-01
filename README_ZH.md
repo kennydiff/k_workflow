@@ -64,6 +64,6 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 
 ### 使用方法：
 ```
-# K_24601 `sn` 是本workflow的默认关键词(Search Notes的缩写)，后面连接多个要搜索的关键词 `空格`分隔, 比如...
+# K_24601 `sn` 是本workflow的默认关键词(Search Notes的缩写)，后面连接多个要搜索的关键词 `空格`分隔, 比如....
 sn ceph config set osd
 ```
