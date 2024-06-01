@@ -4,7 +4,7 @@
 
 # kenny_alfred_workflow
 
-🌈这几个是我常用并且MOD过的 alfred_workflow ，它们能帮到我自己，也许能帮到其他人， Hope you will like it ~~~ 🍺🌸🦀
+🌈这几个是我常用并且MOD过的 alfred workflow ，它们能帮到我自己，也许能帮到其他人， Hope you will like it ~~~ 🍺🌸🦀
 
 
 
