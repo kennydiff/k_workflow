@@ -68,7 +68,7 @@ Creating a new file.
 
 Another straightforward Apple Notes Searcher, which is superior to the previous Alfred's [Search Notes](https://github.com/sballin/alfred-search-notes-app), lies in its ability to input multiple parameters, separated by spaces. This version directly invokes Notes to run the built-in multi-keyword search box for searching, which allows for more flexibility and precision in finding one's own notes.
 
-### Usage:
+#### Usage:
 ```
 # K_24601 `sn` is the default keyword for this workflow(short for `Search Notes`), Connect multiple search-keywords to be searched with `space` separator. e.g...
 sn ceph config set osd
