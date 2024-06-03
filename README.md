@@ -64,6 +64,33 @@ Creating a new file.
 - [x] ⌥⇧↩ to create the file without clipboard contents.
 - [x] If auto-suggest is enabled, press TAB to accept and expand the suggested filename.
 
+## ⚙️ocr_dict (AppleScript & Swift)
+
+Use OCR or word selection to call up the macOS system's "Dictionary" application for looking up words.
+- Default shortcut: **⌃+⌥+⇧+⌘+F** | **⌃+⌥+⇧+⌘+D**
+- Default keyword: `od`(Ocr_Dictionary) & `di`(DIctionary selected text)
+
+### Configuration
+**Languages:** Specify the languages you want the OCR process to consider by adding the appropriate *RFC-5646 language tag*. The following languages (and regions) are currently supported:
+`en-US`, `fr-FR`, `it-IT`, `de-DE`, `es-ES`, `pt-BR`, `zh-Hans`, `zh-Hant`, `yue-Hans`, `yue-Hant`, `ko-KR`, `ja-JA`, `ru-RU`, `uk-UA`  
+
+**Explanations:**
+- `en-US`: (English as used in the United States)
+- `de-DE`: (German as used in Germany)
+- `fr-FR`: (French as used in France)
+- `it-IT`: (Italian as used in Italy)
+- `es-ES`: (Spanish as used in Spain)
+- `pt-BR`: (Portuguese as used in Brazil)
+- `ko-KR`: (Korean as used in South Korea)
+- `uk-UA`: (Ukrainian as used in Ukraine)
+- `ja-JA`: (Japanese as used in Japan)
+- `ru-RU`: (Russian as used in Russia)
+- `yue-Hant`: (Traditional Cantonese)
+- `yue-Hans`: (Simplified Cantonese)
+- `zh-Hant`: (Traditional Chinese)
+- `zh-Hans`: (Simplified Chinese)
+
+
 ## ⚙️search_notes (AppleScript)
 
 Another straightforward Apple Notes Searcher, which is superior to the previous Alfred's [Search Notes](https://github.com/sballin/alfred-search-notes-app), lies in its ability to input multiple parameters, separated by spaces. This version directly invokes Notes to run the built-in multi-keyword search box for searching, which allows for more flexibility and precision in finding one's own notes.

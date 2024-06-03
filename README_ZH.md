@@ -58,6 +58,34 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 - [x] ⌥⇧↩ 不使用剪贴板内容创建文件。
 - [x] 如果自动建议已启用，按 TAB 键接受并展开建议的文件名。
 
+
+## ⚙️ocr_dict (AppleScript & Swift)
+
+利用OCR或选词的方式调用macOS系统的`词典`应用查词。
+- 默认快捷键：**Ctrl+Alt+Shift+Cmd+F** | **Ctrl+Alt+Shift+Cmd+D**
+- 默认关键词：`od`(Ocr_Dictionary) & `di`(DIctionary selected text)
+
+### 设置
+**语言：** 通过添加适当的*RFC-5646语言标签*，指定您希望OCR处理过程考虑的语言。目前支持以下语言（和地区）：
+`en-US`, `fr-FR`, `it-IT`, `de-DE`, `es-ES`, `pt-BR`, `zh-Hans`, `zh-Hant`, `yue-Hans`, `yue-Hant`, `ko-KR`, `ja-JA`, `ru-RU`, `uk-UA`  
+
+**解释:**
+- `en-US`: (English as used in the United States)
+- `de-DE`: (German as used in Germany)
+- `fr-FR`: (French as used in France)
+- `it-IT`: (Italian as used in Italy)
+- `es-ES`: (Spanish as used in Spain)
+- `pt-BR`: (Portuguese as used in Brazil)
+- `ko-KR`: (Korean as used in South Korea)
+- `uk-UA`: (Ukrainian as used in Ukraine)
+- `ja-JA`: (Japanese as used in Japan)
+- `ru-RU`: (Russian as used in Russia)
+- `yue-Hant`: (Traditional Cantonese)
+- `yue-Hans`: (Simplified Cantonese)
+- `zh-Hant`: (Traditional Chinese)
+- `zh-Hans`: (Simplified Chinese)
+
+
 ## ⚙️search_notes (AppleScript)
 
 另一个简单的Apple Notes Searcher，比之前的Alfred的 [Search Notes](https://github.com/sballin/alfred-search-notes-app) 好一些的地方在于可以输入多个参数，空格间隔开来。 这个版本直接调用Notes运行里面的系统自带的多关键词搜索框来搜索，可以更灵活，更准确的找到自己的笔记。
