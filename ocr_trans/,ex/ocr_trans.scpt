@@ -52,20 +52,22 @@ on run argv
         tell process appName
             -- set visible to true
             set frontmost to true
+            delay 0.1
 
 		    if appName = "Dictionary" then
            	    keystroke "f" using {command down, option down}
                 delay 0.1
             end if
             
-			keystroke "a" using {command down}
-            delay 0.1
-            do shell script "echo " & quoted form of queryStr & "|pbcopy"
+            keystroke "a" using {command down}
+            do shell script "echo " & quoted form of queryStr & " | tr -d '\n' | pbcopy"
             keystroke "v" using {command down}
             keystroke return
-            delay 0.1
-            keystroke tab using {shift down}
-
+            
+            if appName = "Dictionary" then
+                delay 0.1
+                keystroke tab using {shift down}
+            end if 
         end tell
     end tell
 end run
