@@ -62,7 +62,7 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 ## ⚙️ocr_trans (Python & Swift)
 
 利用`OCR`或`选文字`的方式调用macOS系统的`词典`应用查词。如果选择的是单个词则调用`词典`应用来查词(效率高)，如果是多个词或者是中文，则调用`OpenAI Translator`来翻译。
-- 默认快捷键： **Ctrl+Alt+Shift+Cmd+D**  |  **Ctrl+Alt+Shift+Cmd+F**
+- 默认快捷键： **Ctrl+Alt+Shift+Cmd+D** (有选择的词句就直接翻译，否则启动OCR)
 - 默认关键词：`tr` (TR)anslate  |  `ot` (O)CR & (T)ranslate
 
 ### OCR设置

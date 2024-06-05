@@ -67,7 +67,7 @@ Creating a new file.
 ## ⚙️ocr_trans (Python & Swift)
 
 Use `OCR` or `Select Text` to invoke the macOS system's `Dictionary` app for word lookup. If a single word is selected, invoke the `Dictionary` app for word lookup (high efficiency). If multiple words are selected or if it's Chinese, invoke `OpenAI Translator` for translation.
-- Default shortcut:  **Ctrl+Alt+Shift+Cmd+D** | **Ctrl+Alt+Shift+Cmd+F**
+- Default shortcut key: **Ctrl+Alt+Shift+Cmd+D** (Translate selected phrases directly; otherwise, initiate OCR)
 - Default keyword:  `tr` (TR)anslate  |  `ot` (O)CR & (T)ranslate
 
 ### Configuration
