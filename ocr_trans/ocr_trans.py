@@ -1,4 +1,3 @@
-# ocr_trans.py
 import sys
 import re
 import subprocess
@@ -8,7 +7,7 @@ import string
 
 
 def contains_chinese(s):
-    print(re.search('[\u4e00-\u9fff]', s))
+    # print(re.search('[\u4e00-\u9fff]', s))
     return re.search('[\u4e00-\u9fff]', s) is not None
 
 def preprocess(query_str):
@@ -34,10 +33,10 @@ def main(argv):
         query_str = ""
     else:
         query_str = argv[0]
-        # query_str = re.sub(r'^[[:punct:][:space:]]+|[[:punct:][:space:]]+$', '', query_str)
-        query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', query_str)
+        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号
+        short_query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', query_str)
 
-    app_name = preprocess(query_str)
+    app_name = preprocess(short_query_str)
 
     if not is_process_running(app_name):
         print(app_name)
@@ -52,7 +51,10 @@ def main(argv):
     #模拟全选的动作
     os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
     
-    # 模拟粘贴动作,将`query_str`的内容粘贴进去当前焦点框
+    if app_name == "Dictionary": # K_24605 如果是词典应用，则使用前后去除杂符号的字符串; "OpenAI Translator"则不需要预处理
+        query_str = short_query_str
+
+    # 模拟粘贴动作,将`query_str`的内容粘贴进去当前焦点框    
     os.system(f"echo '{query_str}' | tr -d '\n' | pbcopy")
     time.sleep(0.1)
     os.system("osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'")
