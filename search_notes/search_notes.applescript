@@ -17,8 +17,7 @@ on run argv
 			delay 0.2
 			keystroke "a" using {command down}
 			delay 0.1
-			do shell script "echo " & quoted form of queryStr & " | tr -d '
-' | pbcopy"
+			do shell script "echo " & quoted form of queryStr & " | tr -d '\n' | pbcopy"
 			keystroke "v" using {command down}
 			keystroke return
 		end tell
