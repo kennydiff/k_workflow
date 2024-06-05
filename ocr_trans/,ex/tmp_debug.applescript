@@ -31,7 +31,7 @@ on run argv
 	
 	set appName to preprocess(queryStr)
 	
-	set b_app_running to false -- ÅĞ¶ÏappÊÇ·ñÒÑÔÚÔËĞĞ
+	set b_app_running to false -- åˆ¤æ–­appæ˜¯å¦å·²åœ¨è¿è¡Œ
 	
 	tell application "System Events"
 		if exists (processes where name is appName) then
@@ -47,7 +47,7 @@ on run argv
 			-- log appName & " activating"
 			-- reopen
 			if appName = "OpenAI Translator" then
-				-- ÕâÀï`OpenAI Translator` ÊÇËùÎ½µÄrustÓ¦ÓÃ, È´´ò¿ªºÜÂı£¬ÖÁÉÙĞèÒªdelay 0.3~0.4 Ãë, ·ñÔò»áÎŞ·¨Æô¶¯ÍêÕû£¬Ö´ĞĞºóÃæµÄÕ³ÌùÂß¼­
+				-- è¿™é‡Œ`OpenAI Translator` æ˜¯æ‰€è°“çš„ruståº”ç”¨, å´æ‰“å¼€å¾ˆæ…¢ï¼Œè‡³å°‘éœ€è¦delay 0.3~0.4 ç§’, å¦åˆ™ä¼šæ— æ³•å¯åŠ¨å®Œæ•´ï¼Œæ‰§è¡Œåé¢çš„ç²˜è´´é€»è¾‘
 				delay 0.4
 			end if
 		end tell
