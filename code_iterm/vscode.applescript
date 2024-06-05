@@ -30,7 +30,7 @@ else
 		set text item delimiters to tab
 		set qArray to every text item of q
 		set text item delimiters to oldDelimiters
-		repeat with atarget in qArray			
+		repeat with atarget in qArray
 			if atarget starts with "~" then
 				set userHome to POSIX path of (path to home folder)
 				if userHome ends with "/" then
