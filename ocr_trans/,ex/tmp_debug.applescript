@@ -65,8 +65,7 @@ on run argv
 			end if
 			
 			keystroke "a" using {command down}
-			do shell script "echo " & quoted form of queryStr & " | tr -d '
-' | pbcopy"
+			do shell script "echo " & quoted form of queryStr & " | tr -d '\n' | pbcopy"
 			keystroke "v" using {command down}
 			keystroke return
 			

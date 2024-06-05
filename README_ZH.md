@@ -59,17 +59,18 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 - [x] 如果自动建议已启用，按 TAB 键接受并展开建议的文件名。
 
 
-## ⚙️ocr_dict (AppleScript & Swift)
+## ⚙️ocr_trans (Python & Swift)
 
-利用OCR或选词的方式调用macOS系统的`词典`应用查词。
-- 默认快捷键：**Ctrl+Alt+Shift+Cmd+F** | **Ctrl+Alt+Shift+Cmd+D**
-- 默认关键词：`od`(Ocr_Dictionary) & `di`(DIctionary selected text)
+利用`OCR`或`选文字`的方式调用macOS系统的`词典`应用查词。如果选择的是单个词则调用`词典`应用来查词(效率高)，如果是多个词或者是中文，则调用`OpenAI Translator`来翻译。
+- 默认快捷键： **Ctrl+Alt+Shift+Cmd+D**  |  **Ctrl+Alt+Shift+Cmd+F**
+- 默认关键词：`tr` (TR)anslate  |  `ot` (O)CR & (T)ranslate
 
-### 设置
+### OCR设置
 **语言：** 通过添加适当的*RFC-5646语言标签*，指定您希望OCR处理过程考虑的语言。目前支持以下语言（和地区）：
 `en-US`, `fr-FR`, `it-IT`, `de-DE`, `es-ES`, `pt-BR`, `zh-Hans`, `zh-Hant`, `yue-Hans`, `yue-Hant`, `ko-KR`, `ja-JA`, `ru-RU`, `uk-UA`  
 
 **解释:**
+
 - `en-US`: (English as used in the United States)
 - `de-DE`: (German as used in Germany)
 - `fr-FR`: (French as used in France)
@@ -84,6 +85,13 @@ type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
 - `yue-Hans`: (Simplified Cantonese)
 - `zh-Hant`: (Traditional Chinese)
 - `zh-Hans`: (Simplified Chinese)
+
+### 词典说明
+- 推荐使用[朗文当代高级英语辞典](https://www.v2ex.com/t/907272)这个词典，单词解释详细，有例句，有英美两种示范读音。
+- 配合用我改写的`DefaultStyle.css`替代默认的格式布局文件(需要安装[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)这个字体)，显示效果更好，特别是`三指触摸`|(`⌘+⌃+D`)的弹出式翻译效果。
+```shell
+brew tap homebrew/cask-fonts && brew install font-lxgw-wenkai
+```
 
 
 ## ⚙️search_notes (AppleScript)

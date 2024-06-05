@@ -1,0 +1,2113 @@
+@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+* {
+    -webkit-animation: none !important;
+    word-wrap: break-word !important;
+    /*自动wrap长词*/
+}
+
+/* --------------------------- front_back_matter-------------------------------------------- */
+.front_back_matter img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* --------------------------- Topic Cloud-------------------------------------------- */
+.topics_container {
+    display: block;
+    font-size: 0.9em;
+    line-height: 118%;
+    background-color: rgba(100, 127, 184, .045);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    padding: 6px 2px 5px 6px;
+}
+
+.topics_container .comma {
+    visibility: hidden;
+    font-size: 1%;
+}
+
+.topicCloud {
+    margin-bottom: 20px;
+}
+
+.cloud {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.cloud:before {
+    content: "Show common entries from this Topic : \A";
+    font-weight: bold;
+    white-space: pre;
+    color: #0388D8;
+}
+
+.cloud.full:before {
+    content: "Show all entries from this Topic : \A";
+    font-weight: bold;
+    white-space: pre;
+    color: #0388D8;
+}
+
+.cloud li {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.cloud li .cn_txt {
+    margin-left: 2px;
+    /* font-size: 81%; */
+    font-size: 90%;
+}
+
+.topic .content {
+    font-size: 0.9em;
+}
+
+.topic .content .cn_topic {
+    position: relative;
+    bottom: 0.05em;
+}
+
+.topic .content .topic_1 {
+    color: #2B6EEE;
+}
+
+.topic .content .topic_2 {
+    color: #878F9C;
+}
+
+.topic .content .topic_3 {
+    color: #DC0F8C;
+}
+
+.topic .content .topic_4 {
+    color: #E0801A;
+}
+
+.topic .content .topic_5 {
+    color: #00A9EE;
+}
+
+.topic .content .topic_6 {
+    color: #CFA300;
+}
+
+.topic .content .topic_7 {
+    color: #74AFAD;
+}
+
+.topic .content .topic_8 {
+    color: #A51890;
+}
+
+.topic .content .topic_9 {
+    color: #2ECC40;
+}
+
+.topic .content .topic_10 {
+    color: #EE3333;
+}
+
+.Entry .related_topics {
+    font-size: 95%;
+    font-size: inherit;
+    color: rgba(99, 127, 154, 1);
+}
+
+.Entry .topic {
+    padding-right: 1px;
+    margin-right: 5px;
+    font-size: 95%;
+}
+
+.Entry .topic:before {
+    content: "◆\00a0";
+    display: inline-block;
+    color: #0388D8;
+}
+
+.Entry .topic:hover {
+    color: #0388D3;
+    border-bottom: 1px dashed #0388D3;
+}
+
+.Entry .topic:hover {
+    color: #4693db;
+}
+
+.entry_content .dictionary .cn_txt .defRef {
+    font-weight: bold;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.6em;
+        margin-top: 5px;
+    }
+
+    .dictionary,
+    .topicCloud {
+        margin-bottom: 10px;
+    }
+}
+
+.exaGroup .title:before,
+.exaGroup .title:before {
+    content: '';
+}
+
+.dictentry {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.topic_intro {
+    display: block;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 90%;
+    text-shadow: 0px 0px 20px #505050;
+    text-align: justify;
+    text-align-last: end;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(221, 60, 77, 0.8);
+    background-image: -webkit-linear-gradient(left, #E75239 0px, #E75239 10%, #FF961C 10%, #FF961C 20%, #FFCC27 20%, #FFCC27 30%, #FCE62F 30%, #FCE62F 40%, #CDE35B 40%, #CDE35B 50%, #82CC33 50%, #82CC33 60%, #41BECE 60%, #41BECE 70%, #0388D8 70%, #0388D8 80%, #9575CD 80%, #9575CD 90%, #AB47BC 90%, #AB47BC 100%);
+    background-position: 50% 0px;
+    margin-bottom: 10px;
+    opacity: 0.625;
+}
+
+.lm5ppbody:not(.chrome):not(.android) .topic_intro:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.topic_intro:hover {
+    opacity: 0.99;
+}
+
+.asset_intro {
+    border: 1px solid #8FA0C5;
+    background-color: #8FA0C5;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    opacity: 0.85;
+}
+
+/* ****  LDOCE  ************************** */
+.ldoceEntry .Entry {
+    font-size: 0.95em;
+    text-align: justify;
+    display: block;
+    margin-top: 8px;
+}
+
+.ldoceEntry .Thesref {
+    color: #647FB8;
+}
+
+.ldoceEntry .ABBR {
+    font-weight: bold;
+}
+
+.ldoceEntry .ACTIV {
+    display: none;
+}
+
+.ldoceEntry .AMEQUIV {
+    font-weight: bold;
+}
+
+.ldoceEntry .BOX {
+    display: none;
+}
+
+.ldoceEntry .BREQUIV {
+    font-weight: bold;
+}
+
+.ldoceEntry .COLLO {
+    font-weight: bold;
+}
+
+.ldoceEntry .ColloExa {
+    display: block;
+}
+
+.ldoceEntry .COLLOINEXA {
+    font-weight: bold;
+}
+
+.ldoceEntry .COMMENT {
+    display: none;
+}
+
+.ldoceEntry .COMP {
+    font-weight: bold;
+}
+
+.ldoceEntry .RunOn .neutral {
+    display: none;
+}
+
+.ldoceEntry .DERIV {
+    font-weight: bold;
+    font-size: 120%;
+    color: #0388D3;
+    margin-left: -1.2em;
+}
+
+.ldoceEntry .DERIV:before {
+    content: '— ';
+    color: #555;
+}
+
+.ldoceEntry .Entry {
+    font-size: 11pt;
+    text-align: justify;
+}
+
+.ldoceEntry .ErrorBox {
+    display: block;
+}
+
+.ldoceEntry .FIELD {
+    display: none;
+}
+
+.ldoceEntry .LEVEL {
+    color: #0388D8;
+    font-size: 120%;
+    font-family: "Times New Roman", serif;
+    position: relative;
+    top: 0.09em;
+}
+
+.ldoceEntry .FULLFORM {
+    font-weight: bold;
+}
+
+.GEO,
+.geo {
+    font-weight: normal;
+    color: #3F7F62;
+    font-size: 80%;
+    border: 1px solid #3F7F62;
+    padding: 0 3px;
+    margin: 0 0.15em;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.Sense [class*="Variant"]>.neutral:first-of-type,
+.Sense [class*="Variant"]>.neutral:last-of-type,
+.Head [class*="Variant"]>.neutral:first-of-type,
+.Head [class*="Variant"]>.neutral:last-of-type,
+.Exponent [class*="Variant"]>.neutral:first-of-type,
+.Exponent [class*="Variant"]>.neutral:last-of-type {
+    display: none;
+}
+
+.Sense [class*="Variant"]:before,
+.Head [class*="Variant"]:before,
+.Exponent [class*="Variant"]:before {
+    content: " ("
+}
+
+.Sense [class*="Variant"]:after,
+.Head [class*="Variant"]:after,
+.Exponent [class*="Variant"]:after {
+    content: ") "
+}
+
+.ldoceEntry .GLOSS {
+    color: currentColor;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.GRAM {
+    margin: 0 0.15em;
+    padding: 0 3px;
+    border: 1px solid;
+    font-size: 80%;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.GRAM .neutral {
+    display: none;
+}
+
+.ldoceEntry .GramExa {
+    display: block;
+}
+
+.ldoceEntry .frequent .HOMNUM {
+    vertical-align: super;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.ldoceEntry .HOMNUM {
+    vertical-align: super;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.ldoceEntry .HWD {
+    display: none;
+}
+
+.ldoceEntry .LEXUNIT,
+.ldoceEntry .LEXVAR {
+    font-weight: bold;
+}
+
+.Sense .REFHWD~.GEO~.LEXUNIT:after {
+    content: "";
+}
+
+.LINKWORD {
+    font-style: italic;
+    font-weight: normal;
+    color: rgba(99, 127, 154, 0.8);
+    font-family: "Times New Roman";
+}
+
+.ldoceEntry .OBJECT {
+    font-weight: lighter;
+    opacity: 0.75;
+}
+
+.ldoceEntry .OPP,
+.ldoceEntry .ORTHVAR,
+.ldoceEntry .PASTPART,
+.ldoceEntry .PASTTENSE {
+    font-weight: bold;
+}
+
+.ldoceEntry .PICCAL {
+    display: none;
+}
+
+.ldoceEntry .PLURALFORM {
+    font-weight: bold;
+}
+
+.ldoceEntry .POS {
+    color: rgba(196, 21, 27, 0.8);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 85%;
+    font-style: italic;
+    margin: 0 0 0 10px
+}
+
+.ldoceEntry .PRESPART,
+.ldoceEntry .PRESPARTX {
+    font-weight: bold;
+}
+
+.ldoceEntry .PROPFORM,
+.ldoceEntry .PROPFORMPREP {
+    font-weight: bold;
+    color: #555;
+}
+
+.ldoceEntry .PTandPP,
+.ldoceEntry .PTandPPX {
+    font-weight: bold;
+}
+
+.ldoceEntry .REFHOMNUM {
+    vertical-align: super;
+    font-size: 80%;
+}
+
+.REFHOMNUM,
+.crossRef .REFHWD+.REFHOM {
+    vertical-align: super;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.crossRef .REFSENSENUM {
+    font-size: 80%;
+}
+
+.neutral {
+    color: black;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: none;
+}
+
+.ldoceEntry .REFHWD {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.ldoceEntry .REFLEX {
+    font-weight: bold;
+}
+
+.ldoceEntry .imagerelated .REFLEX {
+    color: #647FB8;
+}
+
+.Crossref,
+.Thesref,
+.ORIGIN .crossRef {
+    background-color: rgba(100, 127, 200, .045);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 1px 5px;
+}
+
+.ldoceEntry .Sense>.Crossref {
+    display: table;
+    margin-top: 3px;
+}
+
+.ldoceEntry .RunOn+.Crossref {
+    margin-top: 6px;
+}
+
+.ldoceEntry .Sense>.LDOCE5pp_sensefold+.Crossref {
+    display: initial;
+    margin-left: -2px;
+}
+
+.ldoceEntry .Sense>.neutral+.Crossref {
+    display: initial;
+    margin-left: -2px;
+}
+
+.ldoceEntry .Sense>.Thesref {
+    display: table;
+    margin-top: 3px;
+}
+
+.ldoceEntry .Sense>.Thesref .neutral {
+    color: #647FB8;
+    font-size: 100%;
+}
+
+.ldoceEntry .Sense>.Thesref~.Thesref .neutral {
+    display: none;
+}
+
+.ldoceEntry .Sense>.Thesref~.Thesref:before {
+    content: "► see thesaurus at ";
+    color: #647FB8;
+}
+
+.Crossref .crossRef,
+.Thesref .crossRef,
+.Thesref .thesref {
+    padding: 0;
+    margin-left: 3px;
+    background-color: rgba(100, 127, 184, 0);
+}
+
+.crossRef .REFHWD,
+.RELATEDWD {
+    color: #0388D8;
+    font-weight: bold;
+}
+
+.ldoce-show-image .REFHWD {
+    color: #B18D61;
+}
+
+.Crossref.imagerelated {
+    display: table;
+    margin: 3px 0 0 0;
+}
+
+.Crossref[class*="LDOCEVERSION_5"] {
+    display: table;
+    margin: 3px 0 0 0;
+}
+
+.Crossref[class*="LDOCEVERSION_5"] .crossRef .REFHWD .neutral {
+    color: #647FB8;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.Crossref[class*="LDOCEVERSION_5"] .crossRef .REFHWD .neutral:before {
+    content: "\00a0";
+}
+
+.ldoceEntry .Tail>.Crossref {
+    display: table;
+}
+
+.ldoceEntry .Tail>.Crossref+.Crossref>.neutral {
+    display: none;
+}
+
+.ldoceEntry .Tail>.Crossref+.Crossref .REFLEX:before {
+    content: " →";
+    font-weight: normal;
+}
+
+.ldoceEntry .Tail>.Crossref+.Crossref {
+    margin-top: 3px;
+}
+
+.REGISTERLAB {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80%;
+    border: 1px solid #4f6694;
+    color: #4f6694;
+    padding: 0px 3px;
+    margin: 0 0.15em;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.ldoceEntry .RELATEDWD,
+.ldoceEntry .HOMOPHONE {
+    font-weight: bold;
+    color: #0388D3;
+}
+
+.HOMOPHONE:before {
+    content: "Homophone:";
+    color: initial;
+}
+
+.ldoceEntry .RunOn {
+    display: block;
+    margin-bottom: 2px;
+    margin-left: 1.2em;
+}
+
+.ldoceEntry .Sense.cross_sense {
+    margin-bottom: 4px;
+}
+
+.ldoceEntry .Head+a+.Sense {
+    margin-top: 6px;
+}
+
+.ldoceEntry .SpokenSect .LDOCE5pp_sensefold+a+.Sense {
+    margin-top: 6px;
+}
+
+.SIGNPOST {
+    background-color: #647FB8;
+    opacity: 0.8;
+    color: white;
+    font-weight: bold;
+    font-size: 85%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 1px 5px;
+    display: inline-block;
+    line-height: 1.25em;
+}
+
+.SIGNPOST .cn_txt {
+    position: relative;
+    bottom: 0.05em;
+}
+
+.ldoceEntry .STRONG {
+    font-style: italic;
+    font-family: "Times New Roman", sans-serif;
+    color: rgba(99, 127, 154, 0.8) !important;
+}
+
+.ldoceEntry .Subsense {
+    display: table;
+    margin-left: 0px;
+}
+
+.ldoceEntry .Subsense[id*="Sense_"]>.Crossref {
+    margin-top: 3px;
+    margin-left: -10px;
+    display: table;
+}
+
+.ldoceEntry .SUPERL,
+.ldoceEntry .SYN,
+.ldoceEntry .T3PERSSING,
+.ldoceEntry .T3PERSSINGX {
+    font-weight: bold;
+}
+
+.ldoceEntry .UNCLASSIFIED {
+    font-weight: bold;
+}
+
+.ldoceEntry .USAGE {
+    display: none;
+}
+
+.ldoceEntry .neutral {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+
+.CROSS .neutral {
+    color: rgba(196, 21, 27, 0.8) !important;
+    margin-right: 3px;
+}
+
+.BADEXA,
+.BADCOLLO {
+    color: rgba(196, 21, 27, 0.8);
+    text-decoration: line-through;
+}
+
+.BADEXA .neutral,
+.BADCOLLO .neutral {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.ldoceEntry .italic,
+.ldoceEntry .infllab {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.ldoceEntry .warning {
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(196, 21, 27, 0.8);
+}
+
+.ldoceEntry .FREQ,
+.ldoceEntry .AC,
+.ldoceEntry .synopp {
+    font-style: normal;
+    font-size: 70%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.ldoceEntry .FREQ {
+    color: #0388D3;
+    border-color: #0388D3;
+    font-weight: bold;
+    margin-left: 0.1em;
+}
+
+.ldoceEntry .AC {
+    color: #67A78A;
+    border-color: #67A78A;
+    font-weight: bold;
+    margin-left: 0.1em;
+}
+
+span.SYN {
+    color: #0388D3;
+    margin-left: 0.3em;
+}
+
+span.SYN .synopp {
+    color: #fff;
+    border-color: #0388D3;
+    background-color: #0388D3;
+}
+
+span.OPP {
+    color: rgba(196, 21, 27, 0.8);
+    margin-left: 0.3em;
+}
+
+span.OPP .synopp {
+    color: #fff;
+    border-color: rgba(196, 21, 27, 0.8);
+    background-color: rgba(196, 21, 27, 0.8);
+}
+
+.ldoceEntry .F2NBox,
+.ldoceEntry .ThesBox,
+.ldoceEntry .GramBox,
+.ldoceEntry .ColloBox {
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid #647FB8 1px;
+    margin: 8px 0;
+}
+
+.ldoceEntry .SpokenSect {
+    display: block;
+    margin: 12px 0;
+}
+
+.SpokenSect .spokensectheader {
+    font-weight: bold;
+    color: rgba(196, 21, 27, 0.8);
+}
+
+.GramBox .boxheader {
+    display: block;
+    line-height: 2em;
+}
+
+.ColloBox .heading {
+    line-height: 2em;
+    margin: 0 10px 0 0
+}
+
+.ThesBox .heading {
+    line-height: 2em
+}
+
+.ldoceEntry .HEADING,
+.ldoceEntry .heading {
+    color: #647FB8;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.ldoceEntry .HEADING.newline {
+    display: block;
+    margin-top: 10px;
+}
+
+.GramBox .HEADING {
+    display: block;
+}
+
+.GramBox .HEADING~.HEADING {
+    margin: 10px 0 0 0;
+}
+
+.ldoceEntry .SECHEADING,
+.ldoceEntry .subheading {
+    display: table;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid #8FA0C5 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: #8FA0C5;
+    margin-bottom: 3px;
+}
+
+.ldoceEntry .Collocate,
+.ldoceEntry .Exponent {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.lm5ppBox .Section {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.lm5ppBox .BoxPanel .Section~.Section {
+    margin-top: 0;
+}
+
+.lm5ppBox .BoxPanel .Section:last-of-type {
+    margin-bottom: 0;
+}
+
+.ldoceEntry .COLLOC,
+.ldoceEntry .EXP,
+.ldoceEntry .EXPR {
+    font-weight: bold;
+}
+
+.ldoceEntry .THESPROPFORM {
+    font-weight: bold;
+}
+
+.ldoceEntry .COLLEXA,
+.ldoceEntry .THESEXA {
+    color: gray;
+    display: block;
+}
+
+.ldoceEntry .LearnerItem {
+    display: block;
+}
+
+.ldoceEntry .GOODCOLLO {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ldoceEntry .BADCOLLO {
+    text-decoration: line-through;
+}
+
+.ldoceEntry .DEFBOLD {
+    font-weight: bold;
+}
+
+.ldoceEntry .exafile {
+    color: gray;
+    font-style: normal;
+    font-size: 100%;
+    padding: 8.5px 5px 5px 5px;
+}
+
+.ldoceEntry .amefile,
+.ldoceEntry .brefile {
+    opacity: 0.5;
+    padding-left: 3px;
+    font-size: 150% !important;
+}
+
+.ldoceEntry .amefile {
+    color: brown;
+}
+
+.ldoceEntry .brefile {
+    color: #045fb4;
+}
+
+.AMEQUIV .synopp,
+.BREQUIV .synopp {
+    color: #fff;
+    border-color: #0388D3;
+    background-color: #0388D3;
+}
+
+.AMEQUIV,
+.BREQUIV {
+    color: #0388D3;
+}
+
+.AMEQUIV>.normal,
+.BREQUIV>.normal {
+    color: #000;
+}
+
+span.neutral {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+
+span.italic,
+span.infllab {
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Times New roman", sans-serif;
+    color: rgba(99, 127, 154, 0.8);
+}
+
+span.warning {
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(196, 21, 27, 0.8);
+}
+
+span.sensenum {
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.cross_sense .sensenum,
+.Subsense .sensenum {
+    margin-right: 2px;
+}
+
+span.synopp {
+    font-style: normal;
+    font-weight: bold;
+}
+
+span.heading {
+    font-weight: bold;
+    font-size: 120%;
+    color: #647FB8;
+}
+
+span.subheading {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* **** EXAS ***** */
+.exaGroup {
+    font-size: 90%;
+}
+
+.exaGroup .exaEntry,
+.exaGroup .exaGroup {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.exaGroup .title {
+    color: black;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 5px 0 5px 10px;
+}
+
+.exaGroup .exa {
+    color: #555;
+    display: block;
+    margin-left: 10px;
+}
+
+.exaGroup .exa~.exa {
+    margin-top: 5px;
+}
+
+.Sense .exaGroup .exa {
+    margin-left: 10px;
+}
+
+.exaGroup .exa:before {
+    content: "▶ ";
+    font-size: 50%;
+    padding-right: 5px;
+    vertical-align: 2px;
+}
+
+.exaGroup .exa>.neutral {
+    display: none;
+}
+
+.Example_blue .exaGroup .exa {
+    color: rgb(82, 94, 163);
+}
+
+.exaGroup .NodeW {
+    font-weight: bold;
+}
+
+.asset {
+    margin-top: 30px;
+}
+
+/* ** WORD FAMILY ** */
+.pos {
+    color: rgba(196, 21, 27, 0.8);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.wordfams .pos {
+    font-size: 80%;
+    padding-right: 0.8em;
+}
+
+.wordfams .pos~.pos:before {
+    content: "\A";
+    white-space: pre;
+}
+
+.wordfams {
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1.2px solid #5088D8;
+    padding: 0.5em 0.85em;
+    margin: 0.5em 0;
+    font-size: 98%;
+}
+
+.wordfams:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wordfams .asset_intro {
+    background: transparent;
+    color: #647FB8;
+    border: none;
+    font-size: 110%;
+    text-transform: uppercase;
+    padding-bottom: 0.15em;
+}
+
+.wordfams .LDOCE5pp_sensefold {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.w {
+    margin: 0 0.5em 0 -0.25em;
+}
+
+.w+.w.newfamily:before {
+    content: "•";
+    margin: 0 0.25em 0 0;
+    position: relative;
+    /*    top: -2px;*/
+    color: red;
+    width: 6px;
+    height: 6px;
+    /*    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNpiYKA1YETmHM9jCwBS/UCsABV6AMSFlpN+bcDQAFW8HofBgTBNTEiC/XhcApdD1qCAR4MCNg1EAWQND/Coe4BNQyEeDYUYGqChEIhm0wPkEKIPAAgwAGPNFlt7GL7fAAAAAElFTkSuQmCC");*/
+    background-size: 6px auto;
+    display: inline-block;
+}
+
+.w+.newfamily {
+    margin-left: -.25em;
+}
+
+.neutral+.w {
+    margin-left: 0em;
+}
+
+.wordfams .w {
+    font-size: 100%;
+    display: inline;
+    /* fix word-break*/
+    color: #555;
+    text-decoration: none;
+}
+
+.wordfams .opp,
+.wordfams .opp .w {
+    color: #733;
+}
+
+.wordfams .opp .neutral {
+    margin: 0 0.25em 0 -0.25em;
+    color: #733;
+}
+
+.wordfams .w.rootword {
+    color: #0388D3;
+    border-bottom: 0;
+}
+
+.LDOCE_word_family {
+    font-weight: bold;
+    white-space: normal;
+    font-family: Arial Unicode MS, "LXGW WenKai", "Microsoft Yahei UI", Helvetica, -apple-system, BlinkMacSystemFont, Microsoft Yahei, "Lucida Sans Unicode", "Arial Unicode MS", Roboto, Lucida Grande, Lucida Sans, Droid Sans Mono, Droid Sans, sans-serif;
+}
+
+.wordfams .crossRef {
+    background-color: initial;
+    border-radius: initial;
+    -webkit-border-radius: initial;
+    padding: initial;
+}
+
+.wordfams {
+    line-height: 130%;
+    word-break: break-word;
+}
+
+.lm5ppbody {
+    line-height: 1.5em;
+    font-family: "Lucida Grande", "Open Sans", "Lucida Sans Unicode", helvetica, Helvetica, "LXGW WenKai", Microsoft Yahei, "Microsoft Yahei UI", "方正黑体", Segoe UI Symbol, -apple-system, BlinkMacSystemFont, sans-serif;
+    display: block;
+    font-size: 0.96em;
+}
+
+.PronCodes {
+    font-family: "Lucida Sans Unicode", Segoe UI, "Arial Unicode MS", Lucida Sans Unicode, arial, helvetica, sans-serif;
+    color: gray !important;
+}
+
+.lm5ppbody a {
+    color: inherit;
+    text-decoration: inherit;
+    transition: color 0.5s, background-color 0.5s;
+    -webkit-transition: color 0.5s, background-color 0.5s;
+}
+
+.lm5ppbody a:hover {
+    cursor: pointer;
+}
+
+script[src^="bres"]+.lm5ppbody {
+    font-size: 100%;
+}
+
+script[src^="bres"]+.lm5ppbody .entry_content {
+    clear: both;
+}
+
+.entry_content,
+.page_content {
+    margin: 0px 1px 2px 1px;
+}
+
+/* conflict with Goldendict embedded CSS */
+.lm5ppbody .topic .topicCloud.content {
+    min-height: initial;
+    margin: 0 0 20px 0;
+}
+
+.ldoceEntry .lm5pp_POS {
+    color: rgba(196, 21, 27, 0.8);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 80%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 3px;
+    margin: 0 0.15em;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.lm5pp_POS+.lm5pp_POS {
+    margin: 0 2px 0 -2px;
+}
+
+.PhrasalVerb .lm5pp_POS,
+.Sense[id*="phr_"] .lm5pp_POS {
+    font-family: "Lucida Grande", "Open Sans", "Lucida Sans Unicode", helvetica, sans-serif;
+    font-size: 80%;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0 3px;
+    margin: 0 0.15em;
+    text-transform: capitalize;
+    border: 1px solid rgba(196, 21, 27, 0.8);
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.Sense[id*="phr_"] .Tail .lm5pp_POS {
+    color: rgba(196, 21, 27, 0.8);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 85%;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 0;
+    border: none;
+    text-transform: none;
+}
+
+.PhrasalVerb .lm5pp_POS,
+.PhrasalVerb .lm5pp_POS+.neutral,
+.Head~jia.Sense>.REFHWD~.lm5pp_POS+.neutral {
+    display: none;
+}
+
+.Head .Inflections {
+    margin-right: 3px;
+}
+
+.dictentry {
+    margin-bottom: 10px;
+}
+
+.ldoceEntry .Sense {
+    display: table;
+    margin: 0 0 0.25em 0em;
+    color: #151015;
+    width: 98%;
+}
+
+.ldoceEntry .Sense.cross_sense {
+    margin-bottom: 4px;
+}
+
+.ldoceEntry .Head+a+.Sense {
+    margin-top: 6px;
+}
+
+.ldoceEntry .SpokenSect .LDOCE5pp_sensefold+a+.Sense {
+    margin-top: 6px;
+}
+
+.Sense img {
+    float: right;
+    max-width: 30%;
+    max-height: 170px;
+    height: auto;
+    border: .1em solid transparent !important;
+    z-index: 6;
+}
+
+.not-white .Sense img {
+    border: .1em solid #fff9f9;
+}
+
+/* K_24605 解决关键性的问题: 例句的字太小 */
+.cn_txt,
+.cn_title {
+    font-size: 100%;
+    font-family: "LXGW WenKai", "Microsoft Yahei", Microsoft Yahei, cjkextent, "Microsoft Yahei UI", "PingFang SC", STHeiti, 'oalecd9', Helvetica, "方正黑体", sans-serif;
+}
+
+/* K_24605 解决关键性的问题: 例句的字太小 */
+.cn_txt .en_txt {
+    font-size: 100%;
+}
+
+
+.EXAMPLE {
+    margin-left: 20px;
+    position: relative;
+}
+
+.EXAMPLE .cn_txt {
+    display: block;
+}
+
+.ldoceEntry .EXAMPLE {
+    display: block;
+    margin-left: 0.05em;
+    color: #325596;
+    font-size: 98%;
+}
+
+.ldoceEntry .GramExa,
+.ldoceEntry .ColloExa {
+    margin-left: 0.05em;
+}
+
+.Sense>.EXAMPLE,
+.Subsense>.EXAMPLE {
+    border-left: 4px solid rgba(90, 90, 80, 0.2);
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.GramExa {
+    border-left: 4px solid rgba(160, 90, 70, 0.15);
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.ColloExa {
+    border-left: 4px solid rgba(50, 125, 238, 0.15);
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.ldoceEntry .GramExa .EXAMPLE,
+.ldoceEntry .ColloExa .EXAMPLE {
+    margin-left: 0;
+}
+
+.ldoceEntry .GramExa .EXAMPLE .speaker,
+.ldoceEntry .ColloExa .EXAMPLE .speaker {
+    top: -1px;
+    left: -30px;
+}
+
+.ldoceEntry .COLLO,
+.ldoceEntry .PROPFORM,
+.ldoceEntry .PROPFORMPREP {
+    color: #555;
+    margin-left: 0;
+}
+
+.en_txt .cn_txt {
+    display: inline;
+}
+
+.collo .cn_txt {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+a[title="Play Example"] {
+    float: left;
+    width: 25px;
+    position: absolute;
+    left: -25px;
+    top: -1px;
+}
+
+.frequency img {
+    height: auto;
+    max-width: 100%;
+}
+
+.ldoceEntry .HWD,
+.ldoceEntry .Head.suppressedLEXVAR .suppressed {
+    display: inherit;
+    font-weight: bold;
+    font-size: 130%;
+    color: #0388D3;
+    font-family: Georgia, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Lucida Grande, Lucida Sans, Droid Sans Mono, Droid Sans, Arial Unicode MS, Helvetica, sans-serif;
+}
+
+.ldoceEntry .Head.suppressedLEXVAR .HWD {
+    font-size: 0.9em;
+    color: inherit;
+    margin-left: 0.5em;
+}
+
+.frequent .HWD {
+    color: #c33d55;
+}
+
+.ldoceEntry .UsageBox,
+.ldoceEntry .SpokenSect {
+    display: block;
+}
+
+/*common errors*/
+.Error {
+    font-size: 95%;
+    background-color: rgba(220, 30, 53, .05);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 3px 8px;
+    margin-top: 6px;
+    display: table;
+}
+
+.Error .cn_txt {
+    color: gray;
+    display: block;
+    font-size: 95%;
+}
+
+.Error .en_txt .cn_txt {
+    margin-left: 0px;
+    display: inline;
+}
+
+.Error .cn_txt .en_txt {
+    font-size: 105%;
+}
+
+.ErrorBox .SECHEADING {
+    background: rgba(220, 30, 53, .7);
+    border: 0;
+    padding: 2px 6px 1px;
+    display: table;
+}
+
+.Error .warning {
+    display: none;
+}
+
+/*Hint，见test词条*/
+.Hint {
+    font-size: 95%;
+    display: block;
+    background-color: rgba(0, 136, 221, 0.045);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 4px 8px;
+    color: #506BA4;
+}
+
+.Hint .warning {
+    display: none;
+}
+
+.Hint .cn_txt {
+    color: gray;
+    display: block;
+}
+
+.Hint .cn_txt .en_txt {
+    font-size: 105%;
+}
+
+.ldoceEntry .HINTBOLD {
+    font-weight: bold;
+}
+
+.ldoceEntry .HINTITALIC {
+    font-style: italic;
+}
+
+.ldoceEntry .HINTTITLE {
+    font-weight: bold;
+}
+
+.ldoceEntry .UsageBox {
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid #647FB8 1px;
+    padding: 15px;
+}
+
+.ldoceEntry .ColloBox,
+.ldoceEntry .ThesBox,
+.ldoceEntry .F2NBox,
+.ldoceEntry .GramBox {
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid #647FB8 1px;
+    margin: 8px 0;
+}
+
+.ldoceEntry .SpokenSect {
+    display: block;
+    margin: 12px 0;
+}
+
+.SpokenSect .spokensectheader {
+    font-weight: bold;
+    color: rgba(196, 21, 27, 0.8);
+}
+
+.ldoceEntry .Collocate,
+.ldoceEntry .Exponent {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.lm5ppBox .Section {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lm5ppBox .BoxPanel .Section:last-of-type {
+    margin-bottom: 0;
+}
+
+.iphone.eudic .ldoceEntry .Collocate .collo {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.ldoceEntry .lm5ppBox .EXAMPLE {
+    font-size: 88%;
+    margin-left: 25px;
+}
+
+.ldoceEntry .lm5ppBox .EXAMPLE~.EXAMPLE {
+    margin-top: 2px;
+}
+
+/* DEBUG DEBUG DEBUG */
+* [type=phrv] {
+    text-decoration-line: line-through;
+    background-color: beige;
+    display: none;
+}
+
+h1[pagetype="2"]~.dictionary .lm5ppMenu .asset_intro {
+    display: none !important;
+}
+
+/* --------------------------- sign of folding/unfolding sense  ---------------------- */
+
+.sensenum {
+    color: #647FB8;
+    padding: 0 .1em;
+    margin-right: .25em;
+    margin-left: auto;
+    font-size: 105%;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.Sense .sensenum::after {
+    content: '.';
+}
+
+.Subsense .sensenum::after {
+    content: ''
+}
+
+.cross_sense .sensenum::after {
+    content: ''
+}
+
+.Subsense .sensenum,
+.cross_sense .sensenum {
+    opacity: 0.9;
+    display: table-cell;
+    padding-right: 0.15em;
+    width: 1.2em;
+}
+
+.LDOCE5pp_sensefold {
+    display: table-cell;
+}
+
+.Sense .LDOCE5pp_sensefold {
+    display: table-cell;
+    width: 1.5em;
+}
+
+.LDOCE5pp_sensefold_other {
+    cursor: pointer;
+}
+
+.LDOCE5pp_sensefold.fixed {
+    cursor: auto;
+}
+
+.Sense>.LDOCE5pp_sensefold.fixed+.SIGNPOST {
+    margin-left: -2px;
+}
+
+.Sense[id*="phr_"] .LDOCE5pp_sensefold+.REFHWD,
+.Sense>.LDOCE5pp_sensefold+.LEXUNIT {
+    margin-left: 0px;
+}
+
+.Sense .LEXUNIT {
+    font-size: 100%;
+    color: #506BA4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: block;
+}
+
+.Sense>.REFHWD.merge_sense {
+    font-size: 100%;
+    color: #506BA4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.Sense.cross_sense .LEXUNIT {
+    color: initial;
+}
+
+
+/* --------------------------- show/hide syllable -------------------------------------- */
+.HWD>.HYP {
+    display: inline-block;
+    ;
+}
+
+.HWD>.HYP>.HYP {
+    display: inline;
+}
+
+/* --------------------------- Box show/hide controls  ------------------------------- */
+.BoxPanel {
+    display: block;
+    padding: 6px 6px 6px 15px;
+    cursor: auto;
+    overflow: hidden;
+}
+
+.BoxPanel .Exponent .EXP {
+    margin-right: 3px;
+}
+
+.ldoceEntry .lm5ppBox>.lm5ppBoxHead,
+.ldoceEntry .lm5ppBox>.lm5ppBoxHead .boxheader {
+    width: 98%;
+    font-size: 100%;
+    line-height: 1.2em;
+}
+
+.ldoceEntry .lm5ppBox>.lm5ppBoxHead {
+    display: block;
+    padding-left: 6px;
+}
+
+.ldoceEntry .lm5ppBox>.lm5ppBoxHead~.lm5ppBoxHead {
+    font-size: 78%;
+    padding-left: 27px !important;
+}
+
+.ldoceEntry .lm5ppBox>.lm5ppBoxHead~.lm5ppBoxHead>.neutral {
+    display: none;
+}
+
+.lm5ppBox>[class*="LDOCEVERSIONLOGO_"] {
+    left: -2px;
+    top: -1px;
+    position: absolute;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 85%;
+}
+
+.lm5ppbody .ldoceEntry .lm5ppBox {
+    overflow: hidden;
+    padding: 6px 6px 6px 0;
+}
+
+.lm5ppbody .ldoceEntry .BoxHide.lm5ppBox {
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.ldoceEntry .lm5ppBox:not(.BoxHide)>.lm5ppBoxHead {
+    cursor: pointer;
+}
+
+.ldoceEntry .lm5ppBox.LDOCEVERSION_5>.lm5ppBoxHead {
+    padding-left: 6px;
+}
+
+/* --------------------------- LDOCE Online content/5th content   ------------------------------- */
+* [class*="LDOCEVERSION_"] {
+    position: relative;
+}
+
+* [class*="LDOCEVERSIONLOGO_"] {
+    font-weight: bold;
+    font-size: 60%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: -webkit-body;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+}
+
+.LDOCEVERSIONLOGO_new {
+    background-color: rgba(196, 21, 27, 0.55);
+    color: white;
+    font-size: 60%;
+}
+
+.LDOCEVERSIONLOGO_5 {
+    background-color: rgba(100, 127, 184, 0.85);
+    color: white;
+}
+
+.imagerelated .LDOCEVERSIONLOGO_5,
+.Crossref .LDOCEVERSIONLOGO_5,
+span.neutral+span>.LDOCEVERSIONLOGO_5 {
+    position: relative;
+    left: 4px;
+    top: -1px;
+}
+
+.imagerelated .LDOCEVERSIONLOGO_5,
+.Crossref .LDOCEVERSIONLOGO_5 {
+    display: inline-block !important;
+}
+
+.Sense>[class*="LDOCEVERSIONLOGO_"],
+.Subsense>[class*="LDOCEVERSIONLOGO_"],
+.EXAMPLE>[class*="LDOCEVERSIONLOGO_"],
+.Exponent>[class*="LDOCEVERSIONLOGO_"],
+.GramExa>[class*="LDOCEVERSIONLOGO_"],
+.ColloExa>[class*="LDOCEVERSIONLOGO_"],
+.Collocate>[class*="LDOCEVERSIONLOGO_"],
+.ErrorBox>[class*="LDOCEVERSIONLOGO_"],
+.ldoceEntry>[class*="LDOCEVERSIONLOGO_"] {
+    position: absolute;
+    left: -42px;
+    top: 4px;
+}
+
+.EXAMPLE>[class*="LDOCEVERSIONLOGO_"] {
+    left: -17px;
+    top: 4px;
+}
+
+.Sense .EXAMPLE>[class*="LDOCEVERSIONLOGO_"] {
+    left: -27px;
+    top: 4px;
+}
+
+.lm5ppbody a.speaker,
+.lm5ppbody a.PronCodes {
+    outline: 0 none;
+}
+
+.EXAMPLE.speaker>[class*="LDOCEVERSIONLOGO_"] {
+    left: -37px;
+    top: 2px;
+}
+
+.GramExa .EXAMPLE.speaker>[class*="LDOCEVERSIONLOGO_"] {
+    left: -43px;
+    top: 4px;
+}
+
+.ColloExa .EXAMPLE.speaker>[class*="LDOCEVERSIONLOGO_"] {
+    left: -43px;
+    top: 4px;
+}
+
+.lm5ppBox .EXAMPLE>[class*="LDOCEVERSIONLOGO_"] {
+    left: -18px;
+    top: 4px;
+}
+
+.Sense>[class*="LDOCEVERSIONLOGO_"],
+.Subsense>[class*="LDOCEVERSIONLOGO_"] {
+    left: -15px;
+}
+
+.Exponent>[class*="LDOCEVERSIONLOGO_"] {
+    left: -16px;
+}
+
+.Collocate>[class*="LDOCEVERSIONLOGO_"] {
+    left: -16px;
+}
+
+.ErrorBox>[class*="LDOCEVERSIONLOGO_"] {
+    left: -16px;
+    top: 0px;
+}
+
+.lm5ppBox .Section.LDOCEVERSION_new:not(.EXAMPLE)>[class*="LDOCEVERSIONLOGO_"] {
+    left: -16px;
+}
+
+.Section.LDOCEVERSION_new>[class*="LDOCEVERSIONLOGO_"] {
+    position: relative;
+    top: 16px;
+}
+
+.GramExa>[class*="LDOCEVERSIONLOGO_"],
+.ColloExa>[class*="LDOCEVERSIONLOGO_"] {
+    left: -23px;
+}
+
+.ldoceEntry>.Head>[class*="LDOCEVERSIONLOGO_"] {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+.lm5ppBoxHead>[class*="LDOCEVERSIONLOGO_"] {
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.lm5ppBox .EXPL>[class*="LDOCEVERSIONLOGO_"]:not(.EXAMPLE) {
+    position: relative;
+    top: -4px;
+    margin-left: -12px;
+}
+
+#icon_senseFold {
+    margin-left: 20px;
+}
+
+#icon_boxFold {
+    margin-left: 25px;
+}
+
+/* --------------------------- CSS for images ------------------------------- */
+.ldoce5pp-image-small {
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+.ldoce5pp-image-small:hover {
+    opacity: 0.7;
+}
+
+.landscape {
+    display: none;
+}
+
+.portrait {
+    display: inline;
+}
+
+.portrait .cap {
+    font-style: normal;
+}
+
+span.infllab .portrait {
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 500px) {
+    .related_topics {
+        display: none;
+    }
+
+    .landscape {
+        display: none;
+    }
+
+    .portrait {
+        display: inline;
+    }
+}
+
+/* ========================== media ========================== */
+
+@media screen and (max-width: 500px) {
+    .entry_content {
+        margin: 0px 1px 2px 1px;
+    }
+}
+
+/* ========================= speak =========================== */
+.ldoceEntry .speaker.fa {
+    display: inline-block;
+    font: normal normal normal 12px/1 lm5pp_icomoon !important;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.loading.fa-volume-up:before {
+    animation-name: loadingAnim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fa-volume-up:before {
+    content: "\ea27";
+}
+
+@keyframes loadingAnim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ******************* END END END END of image controls END END END END ********************* */
+@font-face {
+    font-family: 'lm5pp_icomoon';
+    src: url("fonts/lm5pp_icomoon.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cjkextent';
+    src: url("fonts/cjkextent.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cn_txt .cn_txt_ext {
+    font-family: "LXGW WenKai", "Microsoft Yahei", Microsoft Yahei, cjkextent, "Microsoft Yahei UI", "PingFang SC", STHeiti, 'oalecd9', Helvetica, "方正黑体", sans-serif;
+    font-size: 111.4%;
+}
+
+.EXPL:before {
+    content: '•';
+    color: #647FB8;
+    margin-right: 3px;
+    font-size: 100%;
+}
+
+.EXPL>.neutral:first-child {
+    display: none;
+}
+
+.EXPL .cross,
+.EXPL .dont_say {
+    color: rgba(196, 21, 27, 0.8);
+}
+
+.ldoceEntry .EXPL {
+    display: block;
+}
+
+.lm5ppBox .EXPL:not(:first-of-type) {
+    margin-top: 3px;
+}
+
+.Sense .asset {
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 500px) {
+    .exaGroup .exa {
+        margin-left: 10px;
+    }
+}
+
+.asset {
+    margin-top: 0px;
+}
+
+.dictentry+.dictentry {
+    padding-top: 5px;
+}
+
+.suppressed {
+    display: none;
+}
+
+.lm5ppbody.Example_blue .ldoceEntry .EXAMPLE {
+    color: rgb(82, 94, 163);
+}
+
+/*disable mouse select*/
+.FREQ,
+.LEVEL,
+.infllab,
+.boxheader,
+.lm5ppBoxHead,
+.lm5pp_POS,
+.cap,
+.REGISTERLAB,
+.GEO,
+.geo,
+.GRAM,
+.landscape,
+.portrait,
+.sensenum,
+.spokensectheader,
+.pos,
+.PLURALFORM,
+.REFLEX,
+.neutral,
+.LDOCEVERSIONLOGO_5,
+.LDOCEVERSIONLOGO_new,
+.related_topics,
+.asset_intro,
+.topic_intro,
+.verbose,
+.range,
+.thesref {
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    -o-user-select: none;
+    /* Opera */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+/*.mobile .lm5ppBoxHead,.mobile .lm5pp_POS，,*/
+.mobile .FREQ,
+.mobile .LEVEL,
+.mobile .infllab,
+.mobile .boxheader,
+.mobile .cap,
+.mobile .REGISTERLAB,
+.mobile .GEO,
+.mobile .geo,
+.mobile .GRAM,
+.mobile .landscape,
+.mobile .portrait,
+.mobile .sensenum,
+.mobile .spokensectheader,
+.mobile .pos,
+.mobile .PLURALFORM,
+.mobile .REFLEX,
+.mobile .neutral,
+.mobile .LDOCEVERSIONLOGO_5,
+.mobile .LDOCEVERSIONLOGO_new,
+.mobile .related_topics,
+.mobile .wordfams .asset_intro,
+.mobile .lm5ppMenu .asset_intro:before,
+.mobile .topic_intro,
+.mobile .verbose,
+.mobile .range,
+.mobile .thesref {
+    -webkit-touch-callout: none;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.DEF {
+    margin-right: 3px;
+}
+
+@media (prefers-dark-interface) {
+    html {
+        -apple-color-filter: apple-invert-lightness();
+    }
+
+    a {
+        -apple-color-filter: apple-invert-lightness();
+        color: -webkit-link;
+    }
+
+    img {
+        filter: invert(0);
+    }
+}
+
+/* --------------------------- K_24602 Apple Client Panel ------------------------------- */
+html.apple_client-panel a,
+html.apple_client-panel ul.tags {
+    display: none;
+}
+
+/* font-family: -apple-system, Helvetica Neue, 苹方-简;
+font-family: "PingFang SC";
+font-size: 100%;
+    font-size: 15px; */
+html.apple_client-panel body {
+    font-family: "LXGW WenKai", "PingFang SC";
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0.9em;
+    margin-right: 0px;
+}
+
+html.apple_client-panel h1 {
+    font-size: 15px;
+}
+
+html.apple_client-panel h2 {
+    font-size: 15px;
+}
+
+
+/* html.apple_client-panel h1 {    
+    margin-top: -8px;
+    margin-bottom: -12px;
+} */
+
+html.apple_client-panel pre {
+    white-space: normal;
+}

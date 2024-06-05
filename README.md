@@ -64,11 +64,11 @@ Creating a new file.
 - [x] ⌥⇧↩ to create the file without clipboard contents.
 - [x] If auto-suggest is enabled, press TAB to accept and expand the suggested filename.
 
-## ⚙️ocr_dict (AppleScript & Swift)
+## ⚙️ocr_trans (Python & Swift)
 
-Use OCR or word selection to call up the macOS system's "Dictionary" application for looking up words.
-- Default shortcut: **⌃+⌥+⇧+⌘+F** | **⌃+⌥+⇧+⌘+D**
-- Default keyword: `od`(Ocr_Dictionary) & `di`(DIctionary selected text)
+Use `OCR` or `Select Text` to invoke the macOS system's `Dictionary` app for word lookup. If a single word is selected, invoke the `Dictionary` app for word lookup (high efficiency). If multiple words are selected or if it's Chinese, invoke `OpenAI Translator` for translation.
+- Default shortcut:  **Ctrl+Alt+Shift+Cmd+D** | **Ctrl+Alt+Shift+Cmd+F**
+- Default keyword:  `tr` (TR)anslate  |  `ot` (O)CR & (T)ranslate
 
 ### Configuration
 **Languages:** Specify the languages you want the OCR process to consider by adding the appropriate *RFC-5646 language tag*. The following languages (and regions) are currently supported:
@@ -90,6 +90,13 @@ Use OCR or word selection to call up the macOS system's "Dictionary" application
 - `zh-Hant`: (Traditional Chinese)
 - `zh-Hans`: (Simplified Chinese)
 
+### Dictionary Instructions
+- Recommend using the [Longman Dictionary of Contemporary English](https://www.v2ex.com/t/907272) for its detailed word explanations, examples, and demonstration pronunciations in both British and American English. 
+- It works best when paired with my revised `DefaultStyle.css` to replace the default layout file(Need to install the [Lxgw WenKai](https://github.com/lxgw/LxgwWenKai) font.), which enhances the display effect, especially the pop-up translation effect when using `three-finger touch` | (`⌘+⌃+D`).
+
+```shell
+brew tap homebrew/cask-fonts && brew install font-lxgw-wenkai
+```
 
 ## ⚙️search_notes (AppleScript)
 

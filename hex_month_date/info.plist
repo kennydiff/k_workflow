@@ -114,7 +114,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Kenny Diff</string>
+	<string>KennyDiff</string>
 	<key>description</key>
 	<string>hex_month_date snippet Triggers</string>
 	<key>disabled</key>
@@ -123,6 +123,29 @@
 	<string>hex_month_date</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/python3 ./slash.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>01BC4F2B-D593-4A9D-96CA-E53AF1B31FE8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -139,29 +162,6 @@
 			<string>5727B84C-A0B8-485A-8C6D-8F89EC2754C8</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/python3 ./slash.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>01BC4F2B-D593-4A9D-96CA-E53AF1B31FE8</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -230,9 +230,9 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>python3 ./hex_month_date.py</string>
+				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -245,7 +245,7 @@
 			<key>config</key>
 			<dict>
 				<key>seconds</key>
-				<string>0.12</string>
+				<string>0.13</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.delay</string>
@@ -266,9 +266,9 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>python3 ./hex_month_date.py</string>
+				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -296,83 +296,95 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>去掉这个组件的依赖'pyperclip'
-修复缺陷：缺陷： ken_5位年月日里面剪贴板的内容被覆盖了， 应该先临时存，然后再paste(这里有点问题)
+	<string>## ⚙️hex_month_date (Python)
 
-type `sd or `hd or `ud to paste a short COMMENT like:
-	# K_22A09 (2022-10-09）
+用五位的年月日来表达未来100年内的日期的一款Alfred Snippet Trigger， 主要是对月份的修改，改为16进制表达，这样可节省一位，年份去掉之前的20这个前缀，可省2位，这样就可用5位替代之前的8位年份。
 
+```shell
+type `sd or `hd or `ud to paste a short COMMENT like:  # K_22A09 (2022-10-09）
+```
 
-								 KennyDiff
-								# K_22702</string>
+- #### 功能
+
+- [x] 去掉这个组件的依赖：'pyperclip'
+
+- [x] type `sd → // K_22710 Slash
+
+- [x] type `hd → # K_22710 Hashtag
+
+- [x] type `ud → _22710 Underline
+
+- [x] 缺陷Fix： ken_5位年月日里面剪贴板的内容被覆盖了， 应该先临时存，然后再paste</string>
 	<key>uidata</key>
 	<dict>
 		<key>01BC4F2B-D593-4A9D-96CA-E53AF1B31FE8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>250</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>190</integer>
+			<real>195</real>
 		</dict>
 		<key>2EA5C8FA-C066-412A-8F4E-52F3B1DCB28C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>375</integer>
+			<real>380</real>
 		</dict>
 		<key>32BD60D0-0899-4F1E-9E9D-E64FDA9015EA</key>
 		<dict>
 			<key>note</key>
-			<string>❗️这里必须要至少延迟0.12秒，否则粘贴动作会被覆盖</string>
+			<string>至少延迟0.13秒</string>
 			<key>xpos</key>
-			<integer>710</integer>
+			<real>840</real>
 			<key>ypos</key>
-			<integer>405</integer>
+			<real>410</real>
 		</dict>
 		<key>349CFEE0-A737-4BC5-9520-7B5A498637CB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>835</integer>
+			<real>960</real>
 			<key>ypos</key>
-			<integer>375</integer>
+			<real>380</real>
 		</dict>
 		<key>5727B84C-A0B8-485A-8C6D-8F89EC2754C8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>190</integer>
+			<real>195</real>
 		</dict>
 		<key>5897DA35-916A-4D83-91D2-0A8E9211A60D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>245</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>570</integer>
+			<real>560</real>
 		</dict>
 		<key>6D6C8168-1AFA-4CCF-B606-54C52CE4959C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>245</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>375</integer>
+			<real>380</real>
 		</dict>
 		<key>A3311F5B-6618-4725-84BA-CC7589295EE2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<real>655</real>
 			<key>ypos</key>
-			<integer>375</integer>
+			<real>380</real>
 		</dict>
 		<key>FA4AC1FE-E7D3-40B4-9C2E-5F1539104E27</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>570</integer>
+			<real>560</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
