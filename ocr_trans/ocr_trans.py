@@ -51,7 +51,7 @@ def main(argv):
     #模拟全选的动作
     os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
     
-    if app_name == "Dictionary": # K_24605 如果是词典应用，则使用前后去除杂符号的字符串; "OpenAI Translator"则不需要预处理
+    if app_name == "Dictionary": # K_24605 如果是`词典`应用，则使用前后去除杂符号的字符串; `OpenAI Translator`则不需要预处理
         query_str = short_query_str
 
     # 模拟粘贴动作,将`query_str`的内容粘贴进去当前焦点框    
