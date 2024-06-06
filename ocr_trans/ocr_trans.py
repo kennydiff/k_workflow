@@ -29,12 +29,14 @@ def is_process_running(name):
         return False
 
 def main(argv):
-    short_query_str = ""  # K_24606 初始化`short_query_str`为空字符串
-    query_str = ""
+    # short_query_str = ""  # K_24606 初始化`short_query_str`为空字符串
+    # query_str = ""
     if argv:
         query_str = argv[0]
-        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号
+        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号        
         short_query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', query_str)
+    else:
+        return  # K_24605 如果没有输入参数，则直接返回
 
     app_name = preprocess(short_query_str)
 
@@ -54,7 +56,8 @@ def main(argv):
     os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
     
     if is_dictionary: # K_24605 如果是`词典`应用，则使用前后去除杂符号的字符串; `OpenAI Translator`则不需要预处理
-        query_str = short_query_str
+        query_str = short_query_str        
+        os.system("osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, option down}'")
 
     # 模拟粘贴动作,将`query_str`的内容粘贴进去当前焦点框    
     os.system(f"echo '{query_str}' | tr -d '\n' | pbcopy")
