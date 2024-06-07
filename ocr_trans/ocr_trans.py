@@ -68,8 +68,8 @@ def main(argv):
     # 模拟回车
     os.system("osascript -e 'tell application \"System Events\" to keystroke return'")
     
-    if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab
-        os.system("osascript -e 'tell application \"System Events\" to keystroke tab using shift down'")
+    # if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab
+        # os.system("osascript -e 'tell application \"System Events\" to keystroke tab using shift down'")
 
 if __name__ == "__main__":
     main(sys.argv[1:])
