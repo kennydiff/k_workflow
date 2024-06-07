@@ -7,7 +7,6 @@ import string
 
 
 def contains_chinese(s):
-    # print(re.search('[\u4e00-\u9fff]', s))
     return re.search('[\u4e00-\u9fff]', s) is not None
 
 def preprocess(query_str):
@@ -68,7 +67,7 @@ def main(argv):
     # 模拟回车
     os.system("osascript -e 'tell application \"System Events\" to keystroke return'")
     
-    # if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab
+    # if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab (在`macOS13`会导致词典的焦点诡异,无法响应退出热键)
         # os.system("osascript -e 'tell application \"System Events\" to keystroke tab using shift down'")
 
 if __name__ == "__main__":
