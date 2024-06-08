@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+h1 {
+	font-family: "LXGW WenKai", "PingFang SC";
+	font-size: 110%;
+	display: inline;
+}
+
+span.phonetic,
+span.trans_name {
+	color: gray;
+}
+
+div.definition {
+	color: cadetblue;
+	display: block;
+	margin: 1em;
+}
+
+div.translation {
+	font-family: "LXGW WenKai", "PingFang SC";
+	/* display: block; */
+	/* color: purple; */
+	/* color: darkslateblue; */
+	color: #2A60A4;
+	/* font-size: 110%; */
+	/* margin 垂直方向的空行大小 */
+	margin: 0.5em;
+}
+
+div.tags {
+	font-family: "LXGW WenKai", "PingFang SC";
+	font-size: 80%;
+	color: gray;
+}
+
+/* --------------------------- K_24602 Apple Client Panel ------------------------------- */
+html.apple_client-panel a,
+html.apple_client-panel ul.tags {
+	display: none;
+}
+
+/* font-family: -apple-system, Helvetica Neue, 苹方-简;
+font-family: "PingFang SC";
+font-size: 100%;
+    font-size: 15px; */
+
+html.apple_client-panel body {
+	font-family: "LXGW WenKai", "PingFang SC";
+	font-size: 115%;
+	margin: -0.2em;
+	/* margin-top: -1em;
+	margin-bottom: 0em;
+	margin-left: 0.2em;
+	margin-right: 0px; */
+}
+
+html.apple_client-panel h1 {
+	font-family: "LXGW WenKai", "PingFang SC";
+	/* font-size: 9px; */
+}
+
+html.apple_client-panel h2 {
+	font-family: "LXGW WenKai", "PingFang SC";
+	/* font-size: 9px; */
+}
+
+html.apple_client-panel pre {
+	white-space: normal;
+}
