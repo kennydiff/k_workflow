@@ -28,16 +28,20 @@ def is_process_running(name):
         return False
 
 def main(argv):
-    # short_query_str = ""  # K_24606 初始化`short_query_str`为空字符串
+    # short_query_str = ""  # K_24606 初始化
     # query_str = ""
     if argv:
-        query_str = argv[0]
-        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号        
-        short_query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', query_str)
+        full_query_str = argv[0]
+        
+        # K_24610 先将所有的 `\n`(换行) 替换成空格
+        short_query_str = re.sub(r'\n', ' ', full_query_str)
+        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号
+        short_query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', short_query_str)
+        safe_query_str = short_query_str.replace("'", "'\\''")
     else:
         return  # K_24605 如果没有输入参数，则直接返回
 
-    app_name = preprocess(short_query_str)
+    app_name = preprocess(safe_query_str)
 
     is_dictionary = app_name == "Dictionary"  # K_24606 判断是否是`词典`应用
 
@@ -46,21 +50,23 @@ def main(argv):
         app_path = f"open -a '{app_name}'" 
         os.system(app_path)
         if not is_dictionary:
-            time.sleep(0.4)
+            time.sleep(0.5)
 
     # 将{app_name}这个应用程序置于前台
     os.system(f"osascript -e 'tell application \"{app_name}\" to activate'")
-    
-    # 模拟全选的动作
-    os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
-    
-    if is_dictionary: # K_24605 如果是`词典`应用，则使用前后去除杂符号的字符串; `OpenAI Translator`则不需要预处理
-        query_str = short_query_str        
-        os.system("osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, option down}'")
 
-    # 模拟粘贴动作,将`query_str`的内容粘贴进去当前焦点框    
-    os.system(f"echo '{query_str}' | tr -d '\n' | pbcopy")
+
+    if is_dictionary: 
+        # K_24610 模拟`macOS`的`command + option + f` 调出查询框(这个动作会自动全选的)
+        os.system("osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, option down}'")
+    else :           
+        # `OpenAI Translator` 需要模拟全选的动作
+        os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
+
+    os.system(f"echo '{safe_query_str}' | tr -d '\n'| pbcopy")
     time.sleep(0.1)
+
+    # print(safe_query_str)
     os.system("osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'")
     time.sleep(0.1)
     
