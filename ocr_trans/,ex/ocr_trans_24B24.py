@@ -12,7 +12,7 @@ def contains_chinese(s):
 def preprocess(query_str):
     contains_punctuation = any(char in string.punctuation for char in query_str)
     if contains_chinese(query_str) or (" " in query_str) or contains_punctuation:
-        return "Bob"
+        return "OpenAI Translator"
     else:
         return "Dictionary"
 
@@ -35,8 +35,8 @@ def main(argv):
         
         # K_24610 先将所有的 `\n`(换行) 替换成空格
         short_query_str = re.sub(r'\n', ' ', full_query_str)
-        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号及下划线
-        short_query_str = re.sub(r'^[\W\s_]+|[\W\s_]+$', '', short_query_str)
+        # K_24605 通过正则表达式去除字符串左右两端的空格和标点符号
+        short_query_str = re.sub(r'^[\W\s]+|[\W\s]+$', '', short_query_str)
         safe_query_str = short_query_str.replace("'", "'\\''")
     else:
         return  # K_24605 如果没有输入参数，则直接返回
@@ -49,36 +49,32 @@ def main(argv):
         # print(app_name)
         app_path = f"open -a '{app_name}'" 
         os.system(app_path)
-        if not is_dictionary:  # K_24615 `Bob`启动很慢,冷启动后第一次启动需要时间等待
-            time.sleep(0.5)
+        if not is_dictionary:  # K_24615 `OpenAI_Translator`启动很慢,冷启动后第一次启动的话，之前设定的等待0.5秒不够
+            time.sleep(1)
 
     # 将{app_name}这个应用程序置于前台
     os.system(f"osascript -e 'tell application \"{app_name}\" to activate'")
 
-    print(safe_query_str)
 
     if is_dictionary: 
         # K_24610 模拟`macOS`的`command + option + f` 调出查询框(这个动作会自动全选的)
         os.system("osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, option down}'")
-        os.system(f"echo '{safe_query_str}' | tr -d '\n'| pbcopy")
-        time.sleep(0.1)
-        # print(safe_query_str)
-        os.system("osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'")
-        time.sleep(0.1)        
-        # 模拟回车
-        os.system("osascript -e 'tell application \"System Events\" to keystroke return'")
-    else :
-        # `Bob` 直接调用Bob的AppleScript脚本翻译选词
-        os.system(f"osascript bob_trans.scpt '{safe_query_str}'")    
+    else :           
+        # `OpenAI Translator` 需要模拟全选的动作
+        os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
+
+    os.system(f"echo '{safe_query_str}' | tr -d '\n'| pbcopy")
+    time.sleep(0.1)
+
+    # print(safe_query_str)
+    os.system("osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'")
+    time.sleep(0.1)
+    
+    # 模拟回车
+    os.system("osascript -e 'tell application \"System Events\" to keystroke return'")
+    
+    # if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab (在`macOS13`会导致词典的焦点诡异,无法响应退出热键)
+        # os.system("osascript -e 'tell application \"System Events\" to keystroke tab using shift down'")
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-
-
-
-# --------------------------------
-# else :           
-    #     # `OpenAI Translator` 需要模拟全选的动作
-    #     os.system("osascript -e 'tell application \"System Events\" to keystroke \"a\" using command down'")
-    # if is_dictionary:   # 如果应用是 `词典`, 还要模拟 shift + tab (在`macOS13`会导致词典的焦点诡异,无法响应退出热键)
-       

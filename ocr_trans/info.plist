@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>11730831-84BC-453A-8A40-24C268C4CDEB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F9953D6-FA8D-4080-BEA2-EFDD9F266724</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F9953D6-FA8D-4080-BEA2-EFDD9F266724</key>
+		<array/>
+		<key>926DDBBE-9C88-4777-A96A-E38C261DC753</key>
+		<array/>
+		<key>B101C41A-F8EF-4CFB-BF55-E639E399074E</key>
+		<array/>
+		<key>B48AE6AE-9CED-4538-993C-AB499CEED983</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7AA4CE29-CF8E-4959-888A-BF5A5D0D3A52</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BE99AE6B-5497-4E79-A3E1-0C8AC7AD8EA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C568EB21-F3AD-4A52-86E2-D4AFA3573DCE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C568EB21-F3AD-4A52-86E2-D4AFA3573DCE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1E197A29-D3BA-4894-8DD8-ABC97B725AEB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E26DCFB6-9E19-492E-92A1-359854790E6A</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7AA4CE29-CF8E-4959-888A-BF5A5D0D3A52</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D6374D61-DE11-4A28-B78B-8627105D947F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BE99AE6B-5497-4E79-A3E1-0C8AC7AD8EA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FB3A1706-FDC7-4982-BDCB-0F620E71C37C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7AA4CE29-CF8E-4959-888A-BF5A5D0D3A52</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>KennyDiff</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>ocr_trans</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:key}</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>(O)CR &amp; (T)ranslate | Dictionary|Translator</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B101C41A-F8EF-4CFB-BF55-E639E399074E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D6374D61-DE11-4A28-B78B-8627105D947F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Tink</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>1E197A29-D3BA-4894-8DD8-ABC97B725AEB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./ocrtool</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BE99AE6B-5497-4E79-A3E1-0C8AC7AD8EA4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>OCR\sFailure:</string>
+						<key>outputlabel</key>
+						<string>failure</string>
+						<key>uid</key>
+						<string>E26DCFB6-9E19-492E-92A1-359854790E6A</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>success</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C568EB21-F3AD-4A52-86E2-D4AFA3573DCE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>11730831-84BC-453A-8A40-24C268C4CDEB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>-- 以下为通用辅助方法，必须写在脚本最外层头部
+use scripting additions
+use framework "Foundation"
+on callBob(recordValue)
+    set theParameter to (((current application's NSString)'s alloc)'s initWithData:((current application's NSJSONSerialization)'s dataWithJSONObject:recordValue options:1 |error|:(missing value)) encoding:4) as string
+    tell application id "com.hezongyidev.Bob" to request theParameter
+end callBob
+
+-- 保存当前剪贴板内容
+-- set originalClipboard to (the clipboard as text)
+
+-- 调用 Bob OCR
+callBob({|path|:"ocr", body:{action:"snipOCR", isSilent: true}})
+
+
+-- 等待剪贴板内容改变
+-- set maxWait to 4 -- 最大等待2秒
+-- set currentWait to 0
+-- repeat
+--     delay 0.5
+--     set currentWait to currentWait + 0.5
+--     if (the clipboard as text) is not equal to originalClipboard then
+--         exit repeat
+--     end if
+--     if currentWait ≥ maxWait then
+--         return -1
+--         -- exit repeat
+--     end if
+-- end repeat
+
+-- 返回更新后的剪贴板内容
+delay 4
+return (the clipboard as text)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F9953D6-FA8D-4080-BEA2-EFDD9F266724</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/local/bin/python3 ./ocr_trans.py $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7AA4CE29-CF8E-4959-888A-BF5A5D0D3A52</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B48AE6AE-9CED-4538-993C-AB499CEED983</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>(^/Users/.*|^$)</string>
+						<key>outputlabel</key>
+						<string>ocr</string>
+						<key>uid</key>
+						<string>BFF851B6-7A28-437A-BA0E-A9FEF21998CF</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>select</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>926DDBBE-9C88-4777-A96A-E38C261DC753</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>tr</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>(TR)anslate for {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FB3A1706-FDC7-4982-BDCB-0F620E71C37C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>![OCR Workflow Icon](icon.png)
+
+# OCR_TRANS
+
+The workflow lets you to **copy text from images** using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. 
+
+- Default shortcut: **⌃+⌥+⇧+⌘+F** | **⌃+⌥+⇧+⌘+D**
+- Default keyword: `od`(Ocr_Dictionary) &amp; `di`(DIctionary selected text)
+
+
+![OCR Workflow File Action preview](fileaction.png)
+
+
+[‣ Visit on Github ◂](https://github.com/kennydiff/k_workflow)
+
+---
+
+### Configuration
+
+**Languages:** Specify the languages you want the OCR process to consider by adding the appropriate *RFC-5646 language tag*. The following languages (and regions) are currently supported:
+
+`en-US`, `fr-FR`, `it-IT`, `de-DE`, `es-ES`, `pt-BR`, `zh-Hans`, `zh-Hant`, `yue-Hans`, `yue-Hant`, `ko-KR`, `ja-JA`, `ru-RU`, `uk-UA`  
+
+---
+
+**Explanations:**
+
+- `en-US`: (English as used in the United States)
+- `de-DE`: (German as used in Germany)
+- `fr-FR`: (French as used in France)
+- `it-IT`: (Italian as used in Italy)
+- `es-ES`: (Spanish as used in Spain)
+- `pt-BR`: (Portuguese as used in Brazil)
+- `ko-KR`: (Korean as used in South Korea)
+- `uk-UA`: (Ukrainian as used in Ukraine)
+- `ja-JA`: (Japanese as used in Japan)
+- `ru-RU`: (Russian as used in Russia)
+- `yue-Hant`: (Traditional Cantonese)
+- `yue-Hans`: (Simplified Cantonese)
+- `zh-Hant`: (Traditional Chinese)
+- `zh-Hans`: (Simplified Chinese)</string>
+	<key>uidata</key>
+	<dict>
+		<key>11730831-84BC-453A-8A40-24C268C4CDEB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>400</real>
+		</dict>
+		<key>1E197A29-D3BA-4894-8DD8-ABC97B725AEB</key>
+		<dict>
+			<key>xpos</key>
+			<real>745</real>
+			<key>ypos</key>
+			<real>225</real>
+		</dict>
+		<key>3F9953D6-FA8D-4080-BEA2-EFDD9F266724</key>
+		<dict>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>410</real>
+		</dict>
+		<key>7AA4CE29-CF8E-4959-888A-BF5A5D0D3A52</key>
+		<dict>
+			<key>xpos</key>
+			<real>730</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
+		<key>926DDBBE-9C88-4777-A96A-E38C261DC753</key>
+		<dict>
+			<key>note</key>
+			<string>`/Users/`开头,或`空字符串`</string>
+			<key>xpos</key>
+			<real>784</real>
+			<key>ypos</key>
+			<real>625</real>
+		</dict>
+		<key>B101C41A-F8EF-4CFB-BF55-E639E399074E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>B48AE6AE-9CED-4538-993C-AB499CEED983</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>525</real>
+		</dict>
+		<key>BE99AE6B-5497-4E79-A3E1-0C8AC7AD8EA4</key>
+		<dict>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>C568EB21-F3AD-4A52-86E2-D4AFA3573DCE</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>D6374D61-DE11-4A28-B78B-8627105D947F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>FB3A1706-FDC7-4982-BDCB-0F620E71C37C</key>
+		<dict>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>635</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>od</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>key</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>zh-Hans, zh-Hant, en-US</string>
+				<key>placeholder</key>
+				<string>RFC-5646 language tags</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Languages</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>languages</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>2</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>v1 [macOS 10.15+]</string>
+						<string>1</string>
+					</array>
+					<array>
+						<string>v2 [macOS 11.0+]</string>
+						<string>2</string>
+					</array>
+					<array>
+						<string>v3 [macOS 13.0+]</string>
+						<string>3</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Model Version</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>revision</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.3.3</string>
+	<key>webaddress</key>
+	<string>https://github.com/kennydiff/k_workflow</string>
+</dict>
+</plist>
