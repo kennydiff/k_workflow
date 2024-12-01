@@ -66,15 +66,17 @@ Creating a new file.
 
 ## ⚙️ocr_trans (Python & Swift)
 
-Use `OCR` or `Select Text` to invoke the macOS system's `Dictionary` app for word lookup. If a single word is selected, invoke the `Dictionary` app for word lookup (high efficiency). If multiple words are selected or if it's Chinese, invoke `OpenAI Translator` for translation.
-- Default shortcut key: **Ctrl+Alt+Shift+Cmd+D** (Translate selected phrases directly; otherwise, initiate OCR)
+Use `OCR` or `Select Text` to call the `Dictionary` application of the macOS system to look up words. If a single word is selected, call the `Dictionary` application to look up the word (high efficiency). If multiple words or Chinese are selected, call `Bob` to translate.
+- Shortcut key for word selected translation: **Ctrl+Alt+Shift+Cmd+D** (translate the selected words directly)
+- Shortcut key for OCR translation : **Ctrl+Alt+Shift+Cmd+C**
 - Default keyword:  `tr` (TR)anslate  |  `ot` (O)CR & (T)ranslate
 
 ### Configuration
 **Languages:** Specify the languages you want the OCR process to consider by adding the appropriate *RFC-5646 language tag*. The following languages (and regions) are currently supported:
-`en-US`, `fr-FR`, `it-IT`, `de-DE`, `es-ES`, `pt-BR`, `zh-Hans`, `zh-Hant`, `yue-Hans`, `yue-Hant`, `ko-KR`, `ja-JA`, `ru-RU`, `uk-UA`  
+`zh-Hans`, `zh-Hant`, `en-US`
 
 **Explanations:**
+
 - `en-US`: (English as used in the United States)
 - `de-DE`: (German as used in Germany)
 - `fr-FR`: (French as used in France)
